@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SayNext Human Evaluation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <h1 class="display-4">SayNext 预测下一句话人工检测</h1>
+    <p class="lead">选择最接近真实回答的一个选项</p>
+    <hr class="my-4">
+    <p>感謝您參與本次實驗！</p>
+    <p>在這個實驗中，我们使用模型预测运动员在采访中的回答，请选出下列三个模型中预测得最接近真实回答的那个。</p>
+    <p>评分标准包括但不限于（你可以有自己的评价标准，只需要和真实回答相似）：</p>
+    <ul>
+      <li>语义相似度</li>
+      <li>话题覆盖一致程度</li>
+      <li>情感相似度</li>
+      <li>生成语句类人程度/流畅度</li>
+    </ul>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; line-height: 1.6; margin: 24px; }
+    fieldset { border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+    legend { font-weight: 600; }
+    .gt { background: #f7f7f7; padding: 8px 12px; border-radius: 6px; }
+    .opt { margin: 6px 0; }
+    button { padding: 10px 16px; border: 0; border-radius: 8px; cursor: pointer; }
+    button[type="submit"] { background: #111; color: #fff; }
+  </style>
+</head>
+<body>
+  <h1>SayNext Human Evaluation</h1>
+
+  <form method="GET" action="https://script.google.com/macros/s/AKfycbzIgH5gpoOgPyBSeX1r1OLebkaIyffQI234XYb_uyTxbHubu29wZ5M7CRfuymvOTGz_9Q/exec">
+    <div class="form-group">
+        <label for="name">姓名：</label>
+        <input class="form-control" type="text" inputmode="text" name="name" required>
+        <small class="form-text text-muted">必填*</small>
+    </div>
+
+    <input type="text" name="formid" value="" hidden>
+    <input type="text" name="thank" value="再次謝謝您參與本次實驗！" hidden>
+    <p>如果提交結果時發現繳不出去，請回頭檢查是否有填入姓名、是否每一題都有作答到，謝謝。</p>
+
+
+      <fieldset>
+        <legend>问题 1（编号 407）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>Yeah, I know what happened. I won the tournament in Montpellier, Joe pulled out and was one set down and five three down. So I was kind of lucky as well. Then I played a bad match against Rubellef, I made a good week in Marseille and then I was tired but I was keeping going in Dubai, I played some good matches and I arrived in Indienwas, couldn't see the ball anymore in the racket, I didn't want to play but you know it is every week it's an important tournament and then I said yes, I play, finally I decided to go home and practice for the Davies Cup, I practiced hard for it and then once the Davies Cup was over I gave all I had on this weekend and then I was like a bit lost, I didn't really know what I wanted to do, if I wanted to go practice I wanted to go holidays or anything but I didn't really enjoy my time on court and then you lose one match, two matches and then it's tough to come back.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q407_order" value="1,2,3"/>
+        <input type="hidden" name="q1_id" value="407"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q407" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> It's not something that I can explain. It was a period of time where I couldn't really find the answers to why I was struggling to find my way around the tour and I didn't feel like I could really compete at the level that was expected of me and it's something where you just have to go away and try to figure it out. I had a lot of conversations with the people that are close to me, my team and my family and we were trying to understand what's going on and then it was more of a process of going away to be by myself and really try and figure out what I'm doing on the court and what my objectives are and that's what it led me to.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q407" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, it's a good question. I mean, it's true that after those four weeks, it was a great period, but it also took a lot out of me, mentally and physically. And I think I struggled to kind of get that level back and find the motivation sometimes throughout the year. It was a tough period to get back on track.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q407" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, I had a strong run earlier in the season, but afterward, I think it was a combination of factors. Physically, I may have pushed too hard, and mentally, I lost a bit of focus or confidence. These things happen in sports, and you learn from them. I've taken the offseason to work on these areas, and I'm feeling better prepared moving forward.
+            </label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>问题 2（编号 227）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>Yeah, I mean, you're entering into a stage of a tournament where all these matches matter a lot more to all of us. Yeah, into that second week is always, I mean, it's always privilege to play out on that court, out in front of all the fans. And again, I obviously knew they were on his side. It's simple as that, but it's what it is. It's part of the game. All this, I think all these moments are just part of the game. And it's really matter how you're going to find the solution to play.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q227_order" value="3,2,1"/>
+        <input type="hidden" name="q2_id" value="227"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q227" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, it's always different to compare matches because the opponents, conditions, and situations are all unique. That match against Nadal last year had its own challenges, and tonight was very different. However, the atmosphere was definitely something special in both, and that energy from the crowd always motivates me to perform at my best.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q227" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Uhm, well, you know, it's always difficult to compare two different matches, two different opponents, of course.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q227" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> I think it's very different because it was a grand slam and I was playing against Rafa. He was the favourite and he was going to be favourite again. I felt like pressure, of course, but also I had a lot of respect for him. Tonight was completely different, I didn't know my opponent, he's not a big name, it wasn't easy to play against him because he played really well. It was not easy.
+            </label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>问题 3（编号 39）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>Return is always important. It's just never not important. So that's all I can say about that.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q39_order" value="3,2,1"/>
+        <input type="hidden" name="q3_id" value="39"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q39" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yes, it was similar today. The return played a significant role in my game, and I tried to stay consistent with it throughout the match.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q39" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, I think the return is always crucial, especially in these high-level matches. Today, it was definitely something I was focusing on.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q39" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> I don't know, I didn't really focus on my serve today. I just knew I had to be a ball striker and try to get as many free points as possible. So I can't say I was a bad server today, but I did have some trouble on a few serves.
+            </label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>问题 4（编号 334）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>I can still smile. It's fine. I cried but now I'm smiling. It's just a tennis match in the end but yeah I'm really sad I couldn't win it. I was close again but the gas was over in the end so she was better, she was fresher and she could give, she had actually more energy in the end.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q334_order" value="2,1,3"/>
+        <input type="hidden" name="q4_id" value="334"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q334" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> It's hard to smile right now. I'm just very disappointed.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q334" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> I'm very sad. I was crying on court and I didn't want to come here to play like this. But on the other hand, it's a new year and maybe I will be better. And I have time to be home and think about what I did wrong and what we have to do better for the next year.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q334" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> It’s definitely frustrating to lose, but that’s part of the sport. I’m trying to stay positive and learn from this experience. Maybe not smile today, but I’ll keep moving forward.
+            </label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>问题 5（编号 237）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>In Brisbane I was serving really, really well. And I just thought I was hitting the ball a bit freer. I was thinking obviously when he comes down to a bit of nerves and just tightened up a little bit, but still managed to get it done.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q237_order" value="2,3,1"/>
+        <input type="hidden" name="q5_id" value="237"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q237" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, uhm... I think just everything, to be honest. I just didn't feel as comfortable out there. My serve wasn't as good, my return wasn't as good. It was just a lot of things that weren't clicking today.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q237" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> **  
+"Yeah, I just didn't feel as sharp here. My game in Brisbane was definitely better, but sometimes things don't click, and that's just how it is. I'll work on it."
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q237" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> I think that's a bit unfair to say that, but yeah, I mean, you know, that was a good tournament for me. I was really happy to be able to play well and get through to the final. And, yeah.
+            </label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>问题 6（编号 373）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>I think he's got a pretty complete game. He's got a big serve, he's got a lot of rotation on the ball and he can hit it flat, he can hit it with the spin. And I like his mentality, I like his confidence in himself, his approach, he's very positive to the court, he's always backing himself up. I like that, obviously he's lacking some experience in playing on a big stage in the big matches, but that's going to come. So I like the way he plays and he seems like a guy who dedicates a lot of time to training and to the process of understanding of how he can improve. And these kind of experiences can only help him.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q373_order" value="2,1,3"/>
+        <input type="hidden" name="q6_id" value="373"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q373" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Well, Dennis is one of those players that, um... he hits the ball extremely hard. He has a lot of power from both sides, especially the forehand. And you see it on TV, you watch him, you scout him, you prepare, but when you actually get on the court with him, the pace of the ball, the speed that he generates, it's just completely different. It comes at you so much faster. It's really challenging to find your rhythm and adapt to that kind of intensity from the first point.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q373" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> I mean, I know what he's going to do. I've faced him so many times. So I don't know, maybe it was a bit of a different match than I was expecting. Maybe a little bit more physical from him. But yeah, it's definitely a great match to play in front of Rod Lever.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q373" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Dennis is definitely an impressive player. Watching him from the sidelines, you see his skills, but it's a whole different challenge facing him on the court. His ball has a lot of pace, and he reads the game well. It was a great experience competing against him, and I have a lot of respect for his game.
+            </label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>问题 7（编号 94）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>I was not always the best tennis but I'm happy to win the match. All it counts in general. At a good momentum, second, third and fourth set, I was playing better. But tough conditions, quite windy, not easy to really play well or have a good rhythm so I'm really happy just to get through.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q94_order" value="1,3,2"/>
+        <input type="hidden" name="q7_id" value="94"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q94" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, I'm happy. I mean, it was a good match. Obviously, the start was slow. It was like a little bit flat-footed, which is not ideal, especially against a player like Denis. He plays with big shots and he likes to go for it, so you need to try to get in the match early. But, you know, as the game went on, he started to find his rhythm. And I managed to kind of mix things up. You know what I was trying to do. The game on the tie break was good. So I served well, and then I played solid points. That was probably the key. After that, things went much better.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q94" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, it was a bit of a tricky match. I didn’t start as well as I wanted, but I picked it up and felt in control for most of it. In the end, it got challenging again, but I’m happy I managed to close it out. There are definitely areas to work on, but overall, I’m satisfied with the performance today.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q94" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Uh, no, not really happy. I mean, it was a tough match.
+            </label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>问题 8（编号 569）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>Well, I found out on Friday night that I was going to play Monday here. I didn't ask. Yeah, it was kind of difficult on Friday when the rain started and we were waiting and we were discussing if they were going to cancel us or are we going to wait. I wanted to wait, which was the best decision probably, because the rain stopped it and I could play in the night and then the final, which was at 5pm. It was pretty hot and humid, so it wasn't really great. I was cramping in the end of the final. But in the end of the day it was very smooth. We came here in the night after the final and yesterday we hit just for 20 minutes. And I'm lucky that I didn't have to hit for many hours to play the match.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q569_order" value="3,1,2"/>
+        <input type="hidden" name="q8_id" value="569"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q569" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> I currently can't analyze videos directly, but if you describe the athlete's facial expressions and body language in detail, I can help predict how they might respond to the reporter's question! Let me know the details, and I’ll be happy to assist.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q569" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Well, I didn't think about it too much because I have my own problems. And I know that she's very good player. I played against her in the past and I beat her, but it's never easy. So I just focused on my game and that's what I did.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q569" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, of course, it was definitely a concern. I think it was a very physical week, especially in Sydney.
+            </label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>问题 9（编号 552）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>Yeah, I mean for me, I've been actually practicing drop shots a lot recently. Just for fun. And yeah, I decided to play a few in the match because I think when I get in the position to either hit a winner, I think people start backing up anyways. So I think that that in a way could also be considered a good shot to hit.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q552_order" value="2,3,1"/>
+        <input type="hidden" name="q9_id" value="552"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q552" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yes, it was part of the strategy.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q552" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> "I don't know if it was specifically the strategy. I was just trying to stay focused and adapt to the situation, but it's definitely something that worked in that moment." 
+
+Based on the athlete's expression, there is a sense of contemplation or thoughtfulness. The neutral facial expression and focused body posture suggest they may be reflecting on the moment rather than giving an immediate, decisive answer. The answer likely indicates a thoughtful and measured response.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q552" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> I didn't really have a strategy, to be honest. I just went out there and I played the same way I do in practice. And yeah, I mean, she's got a lot of power and she hits the ball very clean. So I think she has a really good serve and a good forehand.
+            </label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>问题 10（编号 230）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>I watched that, now I watch it on TV still. My two favorite movies for him are Focus and Seven Pounds. They were amazing, I watch them a lot.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q230_order" value="2,3,1"/>
+        <input type="hidden" name="q10_id" value="230"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q230" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Oh, yeah, man.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q230" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, something like that. I’ve always been a fan, but it’s more about appreciating his work over the years.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q230" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Well, it was really good. I was happy to play him. He's a great guy. We're friends on and off the court. And yeah, I think it's always fun to see each other and get to have that extra match.
+            </label>
+          </div>
+      </fieldset>
+
+    <!-- 可选：带上表单版本，便于在表格里区分不同批次 -->
+<input type="hidden" name="form_type" value="mc_from_json_v1"/>
+    <button type="submit">提交</button>
+  </form>
+</body>
+</html>

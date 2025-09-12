@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SayNext Human Evaluation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <h1 class="display-4">SayNext 预测下一句话人工检测</h1>
+    <p class="lead">选择最接近真实回答的一个选项</p>
+    <hr class="my-4">
+    <p>感謝您參與本次實驗！</p>
+    <p>在這個實驗中，我们使用模型预测运动员在采访中的回答，请选出下列三个模型中预测得最接近真实回答的那个。</p>
+    <p>评分标准包括但不限于（你可以有自己的评价标准，只需要和真实回答相似）：</p>
+    <ul>
+      <li>语义相似度</li>
+      <li>话题覆盖一致程度</li>
+      <li>情感相似度</li>
+      <li>生成语句类人程度/流畅度</li>
+    </ul>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; line-height: 1.6; margin: 24px; }
+    fieldset { border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin-bottom: 24px; }
+    legend { font-weight: 600; }
+    .gt { background: #f7f7f7; padding: 8px 12px; border-radius: 6px; }
+    .opt { margin: 6px 0; }
+    button { padding: 10px 16px; border: 0; border-radius: 8px; cursor: pointer; }
+    button[type="submit"] { background: #111; color: #fff; }
+  </style>
+</head>
+<body>
+  <h1>SayNext Human Evaluation</h1>
+
+  <form method="GET" action="https://script.google.com/macros/s/AKfycbzSOLSWoWskrdvgnJIpUs5itn0ipZ1jUBTVNMLJ_qjWd7ScQLm5X-mDBTZU184t4z19/exec">
+    <div class="form-group">
+        <label for="name">姓名：</label>
+        <input class="form-control" type="text" inputmode="text" name="name" required>
+        <small class="form-text text-muted">必填*</small>
+    </div>
+
+    <input type="text" name="formid" value="" hidden>
+    <input type="text" name="thank" value="再次謝謝您參與本次實驗！" hidden>
+    <p>如果提交結果時發現繳不出去，請回頭檢查是否有填入姓名、是否每一題都有作答到，謝謝。</p>
+
+
+      <fieldset>
+        <legend>问题 1（编号 1）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>I don't know why I should feel more pressure. I'm just in quarter-final, so again, it's a big surprise that they're not in the draw anymore. But my next match is the quarter-final. I'm not thinking about some year final, that I will not have to play Andy or Novak. If I am in the final, that's my least thing, but the last thing I have in my head so far is a big match in quarter-final. It's for sure opening the draw on the other side. With Novak not here, you will have a finalist who is going to be interesting to see who is going to get there. But you have some big players there. You have Nadal, you have Rodgers playing now against Nishikori. So I just think it's an interesting tournament.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q1_order" value="2,1,3"/>
+        <input type="hidden" name="q1_id" value="1"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q1" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> No, no, not really. I think for me, it doesn't change anything. My focus is on my game.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q1" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> I don't feel any pressure at all. I'm just going to go out there and enjoy it. It's been a while since I've been able to play on Rod Labor. So it's a nice court to come back to and just enjoy the atmosphere and try to get a win out of it, but I have to work for it and I'll be all right.
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q1" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> No, not really. Pressure is part of the game, and I try to focus on my performance rather than external expectations.
+            </label>
+          </div>
+      </fieldset>
+      <fieldset>
+        <legend>问题 2（编号 2）</legend>
+
+        <div class="gt"><strong>Ground Truth：</strong>Yeah, no, it's just that I'm feeling more confident for the moment against the top players. I had a lot of matches before the tournament and I knew that I was able to fight and to win some matches against big guys. I knew that I had the level and the key was to play my best tennis in a match and not only during practice, but I'm doing more often than in the past. So that's why I'm more confident and I win some more matches.</div>
+
+        <!-- 回传本题展示顺序（原始编号序列，如 "2,1,3"） -->
+        <input type="hidden" name="q2_order" value="2,3,1"/>
+        <input type="hidden" name="q2_id" value="2"/>
+        <!-- 三个打乱后的选项：显示顺序已随机；value 永远为原始编号 1/2/3 -->
+          <div class="opt">
+            <label>
+              <input type="radio" name="q2" value="2" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, I think it's... .
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q2" value="3" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> ** "Yeah, it's definitely been an interesting few weeks with some big upsets. It shows that in tennis, anything can happen, and anyone can make a deep run if they're playing well. I think there's a lot of players out there who will feel like they have a chance now. It's exciting for the sport, and it keeps us all on our toes."
+            </label>
+          </div>
+          <div class="opt">
+            <label>
+              <input type="radio" name="q2" value="1" required>
+              <!-- 按你的描述，用户从 Answer 1/2/3 中选择；这里显式标注原始编号 -->
+              <strong>Answer：</strong> Yeah, I think it's very similar to other slams, to be honest. I don't think there's anything different here compared to the other Grand Slams. And that's why it makes the slam, you know, it really is unique and it is special. So I'm not really thinking about it.
+            </label>
+          </div>
+      </fieldset>
+
+    <!-- 可选：带上表单版本，便于在表格里区分不同批次 -->
+<input type="hidden" name="form_type" value="mc_from_json_v1"/>
+    <button type="submit">提交</button>
+  </form>
+</body>
+</html>
